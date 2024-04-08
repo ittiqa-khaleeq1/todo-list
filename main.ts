@@ -65,9 +65,10 @@ while (condition) {
 
 
 	else if (todoListOptions.options === "View list") {
+		console.log(chalk.blueBright("****Your To-Do List****"));
 		// todos.forEach(todos => console.log(todos));
 		for (let item of todos) {
-			console.log(chalk.yellowBright(todos.indexOf(item) + 1 + '- ' + item));
+			console.log(chalk.bold.yellowBright(todos.indexOf(item) + 1 + '- ' + item));
 		}
 	}
 
